@@ -10,7 +10,7 @@ export default function Navbar() {
   const { darkMode, setDarkMode}  = useContext(ThemeContext)  
 
   return (
-    <nav className="fixed z-20 h-30 w-full top-0 bg-white/80 dark:bg-gray-900/80 dark:shadow-amber-950 backdrop-blur shadow">
+    <nav className="fixed z-20 h-30 w-full top-0 bg-white/80 dark:bg-gray-900/80  backdrop-blur shadow">
       <div className="max-w-[1400px] mx-auto flex justify-between items-center px-4 sm:px-6 md:px-10 lg:px-14 py-4">
         <img
           src={logo}
@@ -58,7 +58,7 @@ export default function Navbar() {
 
       {/* MOBILE MENU */}
       {menuOpen && (
-        <div className="md:hidden bg-white dark:bg-gray-900 shadow-lg">
+        <div className="md:hidden h-screen backdrop-blur opacity-90 z-40 bg-white dark:bg-gray-900 shadow-lg">
           <div className="flex flex-col gap-4 p-6">
             {["home", "about", "projects", "contact"].map((sec) => (
               <Link
