@@ -1,7 +1,7 @@
 export default function ProjectCard({ title, img, desc, link }) {
   return (
-    <div className="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-lg transition p-4">
-      <img src={img} alt={title} className="rounded-lg mb-4" />
+    <div className="flex flex-col bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-lg transition p-4">
+      <img src={img} alt={title} className="flex grow rounded-lg mb-4" />
 
       <h3 className="text-xl font-semibold dark:text-white">{title}</h3>
 

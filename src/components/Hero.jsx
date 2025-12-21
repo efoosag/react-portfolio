@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 import image from '../images/vict_pic.jpeg';
 
-export default function Hero() {
+export default function Hero() {  
   return (
    <section
   id="home"
