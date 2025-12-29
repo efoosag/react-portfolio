@@ -1,4 +1,15 @@
 export default function About() {
+  const skills = [
+    "React",
+    "JavaScript",
+    "Tailwind CSS",
+    "HTML",
+    "CSS",
+    "Git & Github",
+    "Responsive Design",
+    "REST APIs",
+    "UI/UX Fundamentals",
+  ];
   return (
     <section
       id="about"
@@ -14,18 +25,18 @@ export default function About() {
       </p>
 
       <div className="mt-8 flex justify-center gap-4 flex-wrap">
-        <span className="px-4 py-2 bg-gray-200 dark:bg-gray-700 dark:text-white rounded-full">
-          React
-        </span>
-        <span className="px-4 py-2 bg-gray-200 dark:bg-gray-700 dark:text-white rounded-full">
-          TailwindCSS
-        </span>
-        <span className="px-4 py-2 bg-gray-200 dark:bg-gray-700 dark:text-white rounded-full">
-          JavaScript
-        </span>
-        <span className="px-4 py-2 bg-gray-200 dark:bg-gray-700 dark:text-white rounded-full">
-          Git & GitHub
-        </span>
+        {/* Skill Tags */}
+      
+        {skills.map((skill, index) => (
+          <span
+            key={index}
+            className="px-4 py-2 bg-gray-200 dark:bg-gray-700 dark:text-white rounded-full"
+          >
+            {skill}
+          </span>
+        ))}
+      
+        
       </div>
     </section>
   );

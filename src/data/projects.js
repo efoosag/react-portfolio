@@ -8,17 +8,20 @@ export const projectsData = [
     desc: "A modern book discovery app powered by the Google Books API. Built with React + Vite and Tailwind, featuring search, pagination, favorites, and dark mode. Designed with a responsive UI and smooth user experience in mind.",
     img: googleBookImage,
     link: "https://github.com/efoosag/google-books-app.git",
+    live: "https://google-books-app-mu.vercel.app/"
   },
   {
     title: "Space Travel Hub",
     desc: "A responsive Space Travel Hub web application built with React and Redux that consumes public APIs to display detailed information about space missions and rockets.",
     img: scapeTravelImage,
     link: "https://github.com/efoosag/space-travel-hub.git",
+    live: "https://space-travel-qkaqmss2j-victors-projects-70d0cc5d.vercel.app/",
   },
   {
     title: "Project Management App",
     desc: "A responsive Project Management Web App built with modern frontend technologies to help users create, track, and organize projects and tasks in an intuitive workflow.",
     img: projectManagementImage,
     link: "https://github.com/efoosag/project-management-app",
+    live: "https://project-management-app-hazel-six.vercel.app/"
   },
 ];
